@@ -1,0 +1,7 @@
+echo "Running premake5..."
+premake5 gmake2
+
+echo
+
+echo "Running make..."
+compiledb make
