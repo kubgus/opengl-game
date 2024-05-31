@@ -14,15 +14,15 @@ workspace "Game"
         optimize "Speed"
         flags { "LinkTimeOptimization" }
 
-outdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "Game"
     kind "ConsoleApp"
     language "C++"
     cppdialect "C++17"
 
-    targetdir ("bin/" .. outdir)
-    objdir ("obj/" .. outdir)
+    targetdir ("bin/" .. outputdir)
+    objdir ("obj/" .. outputdir)
 
     files {
         "src/**.cpp",
