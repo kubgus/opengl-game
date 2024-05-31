@@ -28,7 +28,7 @@ public:
             "void main()\n"
             "{\n"
             "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-            "}\0"; 
+            "}\0";
 
         unsigned int fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
         glShaderSource(fragment_shader, 1, &fragment_source_raw, NULL);
@@ -53,10 +53,10 @@ public:
         glGenBuffers(1, &ebo);
 
         float vertices[] = {
-            0.5f,  0.5f, 0.0f,  
-            0.5f, -0.5f, 0.0f,  
-            -0.5f, -0.5f, 0.0f,  
-            -0.5f,  0.5f, 0.0f   
+            0.5f,  0.5f, 0.0f,
+            0.5f, -0.5f, 0.0f,
+            -0.5f, -0.5f, 0.0f,
+            -0.5f,  0.5f, 0.0f
         };
 
         unsigned int indices[] = {
