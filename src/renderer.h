@@ -5,5 +5,5 @@
 
 class Renderer {
 public:
-    inline virtual void run() const = 0;
+    virtual void run() const = 0;
 };

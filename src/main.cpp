@@ -8,7 +8,7 @@
 
 class CustomRenderer : public Renderer {
 public:
-    inline virtual void run() const override {
+    virtual void run() const override {
         glClearColor(0.0, 0.0, 0.0, 1.0);
         glClear(GL_COLOR_BUFFER_BIT);
 
@@ -35,7 +35,6 @@ public:
         glCompileShader(fragment_shader);
 
         unsigned int shader_program = glCreateProgram();
-
         glAttachShader(shader_program, vertex_shader);
         glAttachShader(shader_program, fragment_shader);
         glLinkProgram(shader_program);

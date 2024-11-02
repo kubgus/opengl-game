@@ -10,6 +10,7 @@
 class Window {
 public:
     Window(int x, int y, const char* title) : _x(x), _y(y), _title(title) {}
+
     void begin(std::shared_ptr<Renderer> renderer);
     void end();
 private:
